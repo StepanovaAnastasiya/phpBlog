@@ -1,6 +1,12 @@
 <?php
 
+use Blog\Controllers\AddCommentController;
+use Blog\Controllers\AddPostController;
 use Blog\Controllers\DetailPageController;
+use Blog\Controllers\HomePageController;
+use Blog\Controllers\ImprintPageController;
+use Blog\Controllers\LoginPageController;
+use Blog\Controllers\LogoutPageController;
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/config.php';

@@ -1,5 +1,5 @@
 <?php
-namespace Blog\Controllers;
+namespace Blog\Interfaces;
 
 interface Controller
 {

@@ -11,4 +11,8 @@ class DetailPageController
     public function __construct($postId)
     {
     }
+
+    public function process()
+    {
+    }
 }

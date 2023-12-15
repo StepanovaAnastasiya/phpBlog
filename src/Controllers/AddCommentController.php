@@ -12,5 +12,6 @@ class AddCommentController
     }
     public function process()
     {
+        echo 'add-comment';
     }
 }

@@ -5,5 +5,6 @@ class AddPostController
 {
     public function process()
     {
+        echo 'add-post';
     }
 }
