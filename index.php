@@ -5,6 +5,7 @@ use Blog\Controllers\AddPostController;
 use Blog\Controllers\DetailPageController;
 use Blog\Controllers\HomePageController;
 use Blog\Controllers\ImprintPageController;
+use Blog\Controllers\InsertPostController;
 use Blog\Controllers\LoginPageController;
 use Blog\Controllers\LogoutPageController;
 
@@ -31,6 +32,10 @@ $router->addRoute('#^/phpblog/detail/(\d+)$#', function ($postId) {
 });
 $router->addRoute('#^/phpblog/add-post$#', function () {
     $controller = new AddPostController();
+    $controller->process();
+});
+$router->addRoute('#^/phpblog/insert-post$#', function () {
+    $controller = new InsertPostController();
     $controller->process();
 });
 $router->addRoute('#^/phpblog/add-comment/(\d+)$#', function ($postId) {

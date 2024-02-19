@@ -8,7 +8,7 @@ class HomePageController implements Controller
 {
     public function process()
     {
-        $repos = new PostRepository($GLOBALS['db']);
+        $repos = new PostRepository();
         $posts = $repos->getAllPosts();
         require("src/templates/HomePageView.php");
     }

@@ -5,9 +5,9 @@ class BasicRepository{
 
     protected $db;
 
-    public function __construct( $db)
+    public function __construct()
     {
-        $this->db = $db;
+        $this->db = $GLOBALS['db'];
     }
 
 }

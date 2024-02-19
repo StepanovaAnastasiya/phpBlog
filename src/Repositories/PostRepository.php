@@ -11,12 +11,26 @@ class PostRepository extends BasicRepository{
         $query->execute();
         $list = [];
         while ($row = $query->fetch()) {
-            $item = new BlogPost($row);
-            $list[] = $item;
+            $list[] = $row;
         }
 
         return $list;
     }
+
+    public function insert(){
+        $post = [];
+        if (isset($_POST['title']) && isset($_POST['content'])) {
+            $title = htmlspecialchars($_POST['title']);
+            $content = htmlspecialchars($_POST['content']);
+        }
+        $sql = "INSERT INTO blog_posts (title, text) VALUES (?,?)";
+        $stmt= $this->db->prepare($sql);
+        $stmt->execute([$title, $content]);
+        header("Location: /phpblog/");
+
+    }
+
+
 
 
 }

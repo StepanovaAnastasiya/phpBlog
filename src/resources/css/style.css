@@ -41,7 +41,7 @@ section {
 }
 
 .top-nav {
-  background-color: #444;
+  background-color: #00FFFF;
   padding: 10px;
   text-align: right;
   color: #000;
@@ -75,4 +75,10 @@ tr:hover {
 img {
   max-width: 100px;
   max-height: 100px;
+}
+
+h1 {
+  float: left;
+  width: 300px;
+  padding: 10px;
 }

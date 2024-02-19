@@ -1,10 +1,12 @@
 <?php
 namespace Blog\Controllers;
 
+use Blog\Repositories\PostRepository;
+
 class AddPostController
 {
     public function process()
     {
-        echo 'add-post';
+        require("src/templates/AppPostView.php");
     }
 }
